@@ -1,9 +1,9 @@
-#Bootstrap Breakpoint Listeners for jQuery
+# Bootstrap Breakpoint Listeners for jQuery
 Creates the function `checkLayout()` to give a simple cut-and-paste solution for firing off javascript based on which Bootstrap layout is being displayed. It kicks off automatically on page load, and also whenever the browser window is resized, which I've found to be handy as hell when you need to kick off functions to fix UI bugs moving from vastly different mobile/tablet/desktop layouts.
 
 I'm not sure why something like this isn't built into Bootstrap, or if it is, it's not documented at all.
 
-###Implementation
+### Implementation
 Include the contents of `template.html`, `styles.css`, and `checkLayout.js` in your html, css, and javascript. Rather than calculating screen width, this function simply checks the `display` style of the four `.check-layout` divs. As such, it should still work without modification if you've really changed up when/where Bootstrap's media queries kick off. So, no need to set this script up to match the values of your breakpoints, it should already work as long as you're still using Bootstrap's responsive classes.
 
 It also includes a throttle timer on the `$(window).resize();` event, which I don't recommend getting rid of if your project plans on seeing traffic or serious production.
