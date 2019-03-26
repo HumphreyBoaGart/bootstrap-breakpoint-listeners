@@ -1,9 +1,6 @@
 if (!typeof jQuery == 'undefined' || window.jQuery) {
 	$(document).ready(function() {
 		function checkLayout() {
-			function setLayoutXL() {
-				// Run contents for xlarge screens
-			}
 			function setLayoutLG() {
 				// Run contents for large screens
 			}
@@ -15,9 +12,6 @@ if (!typeof jQuery == 'undefined' || window.jQuery) {
 			}
 			function setLayoutXS() {
 				//  Run contents for mobile screens
-			}
-			if ($('#check-xl').css("display") == "block") {
-				setLayoutXL();
 			}
 			if ($('#check-lg').css("display") == "block") {
 				setLayoutLG();

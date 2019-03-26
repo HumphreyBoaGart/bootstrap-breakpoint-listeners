@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bootstrap Breakpoint Listeners for jQuery</title>
+	<title>Bootstrap v4 Breakpoint Listeners for jQuery</title>
 	<link href="path/to/bootstrap.min.css" rel="stylesheet">
 	<link href="styles.css" rel="stylesheet">
 	<script src="path/to/jquery.min.js"></script>
@@ -11,9 +11,10 @@
 	<script src="checkLayout.js"></script>
 </head>	
 <body>
-	<div id="check-xs" class="check-layout visible-xs-block"></div>
-	<div id="check-sm" class="check-layout visible-sm-block"></div>
-	<div id="check-md" class="check-layout visible-md-block"></div>
-	<div id="check-lg" class="check-layout visible-lg-block"></div>
+	<div id="check-xs" class="check-layout d-block d-sm-none"></div>
+	<div id="check-sm" class="check-layout d-none d-sm-block d-md-none"></div>
+	<div id="check-md" class="check-layout d-none d-md-block d-lg-none"></div>
+	<div id="check-lg" class="check-layout d-none d-lg-block d-xl-none"></div>
+	<div id="check-xl" class="check-layout d-none d-xl-block"></div>
 </body>
 </html>
