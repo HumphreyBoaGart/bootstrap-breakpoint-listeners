@@ -4,7 +4,7 @@ Creates the function `checkLayout()` to give a simple cut-and-paste solution for
 I'm not sure why something like this isn't built into Bootstrap, or if it is, it's not documented at all.
 
 ### Implementation
-Include the contents of `template.html`, `styles.css`, and `checkLayout.js` in your html, css, and javascript. Rather than calculating screen width, this function simply checks the `display` style of the four `.check-layout` divs. As such, it should still work without modification if you've really changed up when/where Bootstrap's media queries kick off. So, no need to set this script up to match the values of your breakpoints, it should already work as long as you're still using Bootstrap's responsive classes.
+Include the contents of `template.html`, `styles.css`, and `checkLayout.js` in your html, css, and javascript. Rather than calculating screen width, this function simply checks the `display` style of the five `.check-layout` divs. As such, it should still work without modification if you've really changed up when/where Bootstrap's media queries kick off. So, no need to set this script up to match the values of your breakpoints, it should already work as long as you're still using Bootstrap's responsive classes.
 
 It also includes a throttle timer on the `$(window).resize();` event, which I don't recommend getting rid of if your project plans on seeing traffic or serious production.
 
